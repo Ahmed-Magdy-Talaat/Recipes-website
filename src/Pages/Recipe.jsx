@@ -46,8 +46,8 @@ function Reciepe({ meals }) {
             <div className="">{strCategory}</div>
           </div>
         </div>
-        <div className="sp d-flex-column gap-4 col-lg-8 col-md-12">
-          <div className="wrap">
+        <div className="sp d-flex-column gap-4 col-lg-8 col-md-12 pt-3">
+          <div className="wrap"
             <div className="fs-4 fw-bold pb-2">Instructions</div>
             <div className="inst">{strInstructions}</div>
           </div>
