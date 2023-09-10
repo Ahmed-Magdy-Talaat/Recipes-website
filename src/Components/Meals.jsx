@@ -10,7 +10,7 @@ export const Meals = ({ dishes }) => {
           return (
             <div
               onClick={() => navigate(`/dish/${dish.strMeal}`)}
-              className=" col-xl-3 col-lg-4 col-md-6 col-sm-1 "
+              className=" col-xl-3 col-lg-4 col-md-6 col-sm-12 "
               key={index}
             >
               <div className="dish-contain  position-relative">

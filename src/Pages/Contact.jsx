@@ -75,9 +75,10 @@ function Contact() {
     }
   };
 
-  const validatePhone = () => {
+  const validatePhone = (e) => {
     const rgxPhone = /^01[0125][0-9]{8}$/gm;
-    if (!data.phone || !data.phone.trim() || !rgxPhone.test(data.phone)) {
+    const { value } = e.target;
+    if (!value || !value.trim() || !rgxPhone.test(value)) {
       setErrors((prevErrors) => ({
         ...prevErrors,
         phone: "Invalid phone number.",
@@ -90,7 +91,6 @@ function Contact() {
     const { name, value } = e.target;
     setData((prevData) => ({ ...prevData, [name]: value }));
 
-    // Use the 'value' parameter directly for comparison
     if (name === "rePass" && value === data.pass) {
       setErrors((prevErrors) => ({
         ...prevErrors,
@@ -122,7 +122,7 @@ function Contact() {
         validatePassword();
         break;
       case "phone":
-        validatePhone();
+        validatePhone(e);
         break;
       case "rePass":
         validateRePass(e);
