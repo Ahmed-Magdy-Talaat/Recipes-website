@@ -30,7 +30,7 @@ function Reciepe({ meals }) {
   }
   return (
     <div className="container">
-      <div className="row gx-4">
+      <div className="row-lg col-md gx-4">
         <div className="fsp d-flex flex-column gap-3 col-lg-4 col-md-12">
           <div className="w-100">
             <img className="w-100" src={strMealThumb} alt={strMeal} />
