@@ -13,12 +13,13 @@ import Recipe from "./Pages/Recipe";
 import CategoryMenu from "./Pages/CategoryMenu";
 import IngredientsMenu from "./Pages/IngredientsMenu";
 import AreaMenu from "./Pages/AreaMenu";
+import Transition from "./Components/Transition";
 export const modeContext = createContext(null);
 
 function App() {
   const [meals, setMeals] = useState([]);
   const [mode, setMode] = useState("light");
-
+  const [clip, setclip] = useState("true");
   const toggleMode = () => {
     setMode((cur) => (cur === "light" ? "dark" : "light"));
   };
@@ -33,6 +34,7 @@ function App() {
       }
       const data = await response.json();
       setMeals(data.meals);
+      setclip(false);
     } catch (error) {
       console.log("Error in Fetching process");
     }
@@ -43,6 +45,7 @@ function App() {
 
   return (
     <modeContext.Provider value={{ mode, toggleMode }}>
+      {clip && <Transition />}
       <div className="App" id={mode === "dark" ? "dark" : "light"}>
         <Navbar />
         <div>
