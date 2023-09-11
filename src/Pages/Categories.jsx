@@ -35,7 +35,7 @@ function Categories() {
               categ;
             return (
               <div
-                className="col-xl-3 col-lg-4 col-md-6 col-sm-1"
+                className="col-xl-3 col-lg-4 col-md-6 col-sm-12"
                 key={index}
                 onClick={() => navigate(`/Categories/${strCategory}`)}
               >
