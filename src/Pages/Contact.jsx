@@ -145,14 +145,14 @@ function Contact() {
   };
 
   return (
-    <div className="w-75 position-absolute top-0 bottom-0 cont d-flex align-content-center align-items-center ">
-      <div className="container w-75 d-flex flex-column contact-us">
-        <div className="contact fs-2 text-center mb-3 mt-3">Contact Us</div>
-        <form className="align-content-center align-items-center justify-content center px-5">
-          <div className="col gy-3 ">
+    <div className=" d-flex align-content-start align-items-start ">
+      <div className="container  d-flex flex-column contact-us">
+        <div className="contact fs-2 mb-3 mt-3">Contact Us</div>
+        <form className="align-content-start align-items-start w-100 px-1">
+          <div className="container-fluid col gy-3 w-100 ">
             <div className=" col-lg-12 d-flex flex-row gap-2 mt-3">
-              <div>
-                <div>
+              <div className="w-100">
+                <div className="">
                   <label className="" htmlFor="firstName">
                     FirstName :
                   </label>
@@ -160,6 +160,7 @@ function Contact() {
                     type="text"
                     id="content-input"
                     name="fname"
+                    className="col-lg-8 col-md-12"
                     value={data.fname}
                     onChange={handleInputChange}
                   />
@@ -167,15 +168,14 @@ function Contact() {
                 {errors.fname && <div className="error">{errors.fname}</div>}
               </div>
             </div>
-
             <div className=" col-lg-12 d-flex flex-row gap-2 mt-3">
-              <div>
-                <div>
+              <div className="w-100">
+                <div className="w-100">
                   <label className="" htmlFor="Email">
                     Email :
                   </label>
                   <input
-                    className=""
+                    className="col-lg-8 col-md-12"
                     type="text"
                     id="content-input"
                     value={data.email}
@@ -187,13 +187,13 @@ function Contact() {
               </div>
             </div>
             <div className=" col-lg-12 d-flex flex-row gap-2 mt-3">
-              <div>
+              <div className="w-100">
                 <div>
                   <label className="" htmlFor="phone">
                     Phone :
                   </label>
                   <input
-                    className=""
+                    className="col-lg-8 col-md-12"
                     type="text"
                     id="content-input"
                     value={data.phone}
@@ -206,13 +206,13 @@ function Contact() {
             </div>
 
             <div className=" col-lg-12 d-flex flex-row gap-2 mt-3">
-              <div>
+              <div className="w-100">
                 <div>
                   <label className="" htmlFor="Age">
                     Age :
                   </label>
                   <input
-                    className=""
+                    className="col-lg-8 col-md-12"
                     type="number"
                     id="content-input"
                     value={data.age}
@@ -224,13 +224,13 @@ function Contact() {
               </div>
             </div>
             <div className=" col-lg-12 d-flex flex-row gap-2 mt-3">
-              <div>
+              <div className="w-100">
                 <div>
                   <label className="" htmlFor="pass">
                     Password :
                   </label>
                   <input
-                    className=""
+                    className="col-lg-8 col-md-12"
                     type="password"
                     id="content-input"
                     name="pass"
@@ -242,13 +242,13 @@ function Contact() {
               </div>
             </div>
             <div className=" col-lg-12 d-flex flex-row gap-2 mt-3">
-              <div>
+              <div className="w-100">
                 <div>
                   <label className="" htmlFor="repass">
                     Repassword :
                   </label>
                   <input
-                    className=""
+                    className="col-lg-8 col-md-12"
                     type="password"
                     id="content-input"
                     name="rePass"

@@ -19,7 +19,6 @@
 #dark .sidebar-div,
 #dark .navbar,
 #dark .rcp-div,
-#dark .contact-us,
 #dark input {
   background-color: #3a3a3a;
   transition: 0.5s all;
@@ -30,8 +29,7 @@
 
 #light .sidebar-div,
 #light .navbar,
-#light .rcp-div,
-#light .contact-us {
+#light .rcp-div {
   background-color: #f8f9fa;
   transition: 0.3s all;
 }
@@ -87,9 +85,6 @@ h-100vh {
 }
 form label {
   width: 6em;
-}
-form input {
-  width: 22em;
 }
 /* Updated Sidebar CSS */
 
@@ -287,14 +282,41 @@ a {
 input {
   padding: 5px;
 }
+/* tyle={{ marginLeft: "4em", marginTop: "5em", marginBottom: "3em" } */
+.last-main {
+  margin-left: 4em;
+  margin-top: 5em;
+  margin-bottom: 3em;
+}
 @media screen and (max-width: 650px) {
   .sidebar-container.close .sidebar-div {
     width: 55px; /* Expanded width */
   }
   .icon {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.3rem;
+    height: 1.3rem;
     border-radius: 50%;
-    margin-left: 0.2rem;
+    margin-left: 0rem;
   }
+  .ele {
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    width: 100%;
+    text-decoration-line: none;
+    gap: 1em;
+    display: flex;
+    transition: 0.5s ease;
+    margin: 0em;
+    /* align-items: center;
+    align-content: center; */
+    text-align: center;
+  }
+  .last-main {
+    margin-left: 3em;
+    margin-top: 4em;
+    margin-bottom: 3em;
+  }
+}
+.px-10 {
+  padding: 10 0;
 }

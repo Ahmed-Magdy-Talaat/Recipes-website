@@ -48,9 +48,7 @@ function App() {
         <div>
           <Sidebar />
         </div>
-        <div
-          style={{ marginLeft: "4em", marginTop: "5em", marginBottom: "3em" }}
-        >
+        <div className="last-main">
           <Routes>
             <Route path="/" element={<Meals dishes={meals} />} />
             <Route path="/Search" element={<Search dishes={meals} />} />
